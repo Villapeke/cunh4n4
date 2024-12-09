@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guardería Villa Peke, un lugar seguro y divertido para nuestros pequeños.">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Villa Peke - Guardería</title>
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="videos/fondo.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
+    
+    <header>
+        <div class="header-video">
+            <video autoplay loop muted>
+                <source src="videos/video.mp4" type="video/mp4">
+                Tu navegador no soporta video.
+            </video>
+            <div class="overlay">
+                <h1 class="rainbow">Bienvenida</h1>
+                <p class="description">En Villa Peke, brindamos un ambiente seguro y cariñoso donde los niños pueden aprender y jugar.</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="pág/index.html">Inicio</a></li>
+            <li><a href="pág/que_hacemos.html">Nosotros</a></li>
+            <li><a href="pág/espacios.html">Espacios</a></li>
+            <li><a href="pág/novedades.html">Novedades</a></li>
+            <li><a href="pág/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="rectangles">
+            <div class="rectangle pastel-pink">Actividades Educativas: En nuestra guardería, ofrecemos una variedad de actividades diseñadas para el aprendizaje y el desarrollo de los niños.</div>
+            <div class="rectangle pastel-blue">Juegos al Aire Libre: Fomentamos el juego al aire libre para que los niños desarrollen habilidades sociales y físicas.</div>
+            <div class="rectangle pastel-orange">Alimentación Saludable: Ofrecemos menús saludables y equilibrados para el crecimiento adecuado de los pequeños.</div>
+        </section>
+
+        <section class="personal">
+            <h2><a href="pág/que_hacemos.html">Nuestro Personal</a></h2>
+            <div class="person">
+                <img src="images/personal.jpg" alt="Personal 1">
+                <p>Con amor y dedicación, cuidamos de tus pequeños.</p>
+            </div>
+            <div class="person">
+                <img src="images/personal_1.jpg" alt="Personal 2">
+                <p>Educadores capacitados para el desarrollo de tus hijos.</p>
+            </div>
+            <div class="person">
+                <img src="images/personal_2.jpg" alt="Personal 3">
+                <p>Apoyo emocional y pedagógico en cada actividad.</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2><a href="pág/espacios.html">Conoce Nuestros Espacios</a></h2>
+            <div class="slider">
+                <img src="images/clase.jpg" alt="Clase">
+                <img src="images/comedor.jpg" alt="Comedor">
+                <img src="images/dormitorio.jpg" alt="Dormitorio">
+                <img src="images/espacios1.jpg" alt="Espacios">
+            </div>
+        </section>
+
+        <section class="news">
+            <h2><a href="pág/novedades.html">Novedades</a></h2>
+            <div class="news-item">
+                <img src="images/programa.jpg" alt="Programa">
+                <p>Programa de actividades para el mes de octubre.</p>
+            </div>
+            <div class="news-item">
+                <img src="images/taller.jpg" alt="Taller">
+                <p>Taller de manualidades el 15 de octubre.</p>
+            </div>
+            <div class="news-item">
+                <img src="images/jornada.jpg" alt="Jornada de Puertas Abiertas">
+                <p>Jornada de puertas abiertas el 22 de octubre.</p>
+            </div>
+            <div class="news-item">
+                <img src="images/diversion.jpg" alt="Diversión">
+                <p>Día de diversión el 30 de octubre.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Dirección: Calle La Paz, Teruel, España | Teléfono: 637148586</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+```
+
+### Código CSS Completo (css/styles.css)
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Asegúrate de que el video de fondo esté detrás de otros elementos */
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    position: relative;
+    height: 40vh; /* Altura del encabezado al 40% de la vista */
+    overflow: hidden;
+}
+
+.header-video {
+    position: relative;
+    height: 100%;
+}
+
+.header-video video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; /* Asegúrate de que el texto esté encima del video */
+}
+
+.rainbow {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: #f8f8f8; /* Color para la descripción */
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    background: url('images/corazon.jpg') no-repeat center center/contain;
+    border-radius: 50%;
+}
+
+main {
+    padding: 100px 20px;
+}
+
+.rectangles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.rectangle {
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.pastel-pink {
+    background-color: #ffcccb;
+}
+
+.pastel-blue {
+    background-color: #add8e6;
+}
+
+.pastel-orange {
+    background-color: #ffebcd;
+}
+
+.personal {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.personal h2 {
+    margin-bottom: 20px;
+}
+
+.personal .person {
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 10px;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.slider img {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.news-item {
+    width: 45%;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+}
+```
+
+### Resumen de Cambios Realizados
+
+1. **Estructura Completa**: Se han agregado todas las secciones, incluidas las descripciones en la sección de rectángulos, así como las secciones de personal, galería y novedades.
+
+2. **Enlaces Actualizados**: Todos los enlaces se han actualizado para apuntar a la carpeta `pág/`.
+
+3. **Menú Estilizado**: El menú ahora incluye el efecto de corazón que solicitaste, y está configurado para que se vea bien sobre el fondo.
+
+4. **Ajustes de Diseño**: Se han realizado ajustes para garantizar que todas las secciones se muestren correctamente en la página.
+
+Con estos códigos, tu página de inicio debería funcionar correctamente y cumplir con todas las especificaciones que has solicitado. Si necesitas más ajustes o tienes alguna otra pregunta, ¡no dudes en decírmelo!
