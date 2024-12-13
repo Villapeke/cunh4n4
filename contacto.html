@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guardería Villa Peke, un lugar seguro y divertido para nuestros pequeños.">
+    <link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/new-styles.css">
+    <title>Contacto - Villa Peke</title>
+</head>
+<body>
+    <!-- Video de fondo en el body -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="../videos/video.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+    <!-- Sección de encabezado con el logo y nombre de la guardería -->
+    <div class="video-header">
+        <div class="video-overlay">
+            <img src="../images/logo.jpg" alt="Logo de Villa Peke" class="logo-overlay">
+            <h1 class="guarderia-name">Villa Peke</h1>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-video">
+            <video autoplay loop muted>
+                <source src="../videos/fondo.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <div class="overlay">
+                <h1 class="welcome-title">¡Contacto!</h1>
+                <p class="description">Aquí podrás ponerte en contacto con nosotras.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pag/que-hacemos.html">Nosotros</a></li>
+            <li><a href="../pag/espacios.html">Espacios</a></li>
+            <li><a href="../pag/novedades.html">Novedades</a></li>
+            <li><a href="../pag/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Contacto -->
+    <section class="contacto">
+        <div class="contacto-form">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Tu Nombre" required>
+                <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección de Blog -->
+    <section class="blog-post">
+        <h3>Deja tu Mensaje</h3>
+        <p>Comparte tus pensamientos, sugerencias o experiencias. Nos encantaría saber de ti.</p>
+        <textarea placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+        <button type="submit">Publicar Mensaje</button>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Dirección: Calle La Paz, Teruel, España | Teléfono: 637148586</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const contactForm = document.querySelector('.contact-form form');
+            const blogButton = document.querySelector('.blog-section button');
+
+            // Manejar el envío del formulario de contacto
+            contactForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevenir el envío del formulario
+
+                // Aquí puedes añadir la lógica para enviar los datos al servidor
+                alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+
+                // Restablecer el formulario
+                contactForm.reset();
+            });
+
+            // Manejar la publicación del mensaje en el blog
+            blogButton.addEventListener('click', function() {
+                const messageText = document.querySelector('.blog-section textarea').value;
+
+                if (messageText) {
+                    alert('Tu mensaje ha sido publicado: ' + messageText);
+                    // Aquí puedes añadir la lógica para almacenar el mensaje en el servidor
+                    document.querySelector('.blog-section textarea').value = ''; // Limpiar el área de texto
+                } else {
+                    alert('Por favor, escribe un mensaje antes de publicar.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

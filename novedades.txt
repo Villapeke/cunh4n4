@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guardería Villa Peke, un lugar seguro y divertido para nuestros pequeños.">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Villa Peke - Guardería</title>
+</head>
+<body>
+    <!-- Video de fondo en el body -->
+    <div class="video-background">
+        <video autoplay loop muted>
+            <source src="../videos/video.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </div>
+
+    <!-- Sección de encabezado con el logo y nombre de la guardería -->
+    <div class="video-header">
+        <div class="video-overlay">
+            <img src="../images/logo.jpg" alt="Logo de Villa Peke" class="logo-overlay">
+            <h1 class="guarderia-name">Villa Peke</h1>
+        </div>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="header-video">
+            <video autoplay loop muted>
+                <source src="../videos/fondo.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+            <div class="overlay">
+                <h1 class="welcome-title">¡Aqui las novedades!</h1>
+                <p class="description">Porque cada dia en la guarderia VillaPeke es una novedad divertida.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de navegación -->
+   <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="../pag/que-hacemos.html">Nosotros</a></li>
+            <li><a href="../pag/espacios.html">Espacios</a></li>
+            <li><a href="../pag/novedades.html">Novedades</a></li>
+            <li><a href="../pag/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Novedades -->
+    <section class="novedades">
+        <h2 class="section-title">Novedades</h2>
+        <div class="novedades-container">
+            <div class="news-item">
+                <img src="../images/programa.jpg" alt="Programa">
+                <h3>Programa de Actividades para Octubre</h3>
+                <p>Este mes, introducimos un emocionante programa de actividades que incluye juegos al aire libre, talleres de manualidades y sesiones de música. Nuestro objetivo es ofrecer un ambiente enriquecedor donde los niños puedan aprender mientras se divierten.</p>
+            </div>
+            <div class="news-item">
+                <img src="../images/taller.jpg" alt="Taller de manualidades">
+                <h3>Taller de Manualidades</h3>
+                <p>El 15 de octubre, realizaremos un taller de manualidades donde los niños podrán desarrollar su creatividad. Utilizaremos materiales reciclados para crear arte y fomentar la conciencia ambiental.</p>
+            </div>
+            <div class="news-item">
+                <img src="../images/jornada.jpg" alt="Jornada de Puertas Abiertas">
+                <h3>Jornada de Puertas Abiertas</h3>
+                <p>Te invitamos a nuestra jornada de puertas abiertas el 22 de octubre. Será una gran oportunidad para que las familias conozcan nuestras instalaciones y el equipo educativo. Habrá actividades para los niños y sorpresas.</p>
+            </div>
+            <div class="news-item">
+                <img src="../images/diversion.jpg" alt="Día de Diversión">
+                <h3>Día de Diversión</h3>
+                <p>El 30 de octubre, celebraremos un día de diversión con juegos, dinámicas y actividades al aire libre. Todos los niños están invitados a participar y disfrutar de un día lleno de risas y alegría.</p>
+            </div>
+        </div>
+
+        <!-- Sub-sección: Eventos Especiales -->
+        <div class="eventos-especiales">
+            <h3>Eventos Especiales</h3>
+            <ul>
+                <li><strong>Día de Puertas Abiertas:</strong> El 22 de octubre, ven a conocer nuestras instalaciones y el equipo docente.</li>
+                <li><strong>Halloween en Villa Peke:</strong> El 31 de octubre, celebraremos Halloween con actividades temáticas y disfraces.</li>
+                <li><strong>Fiesta de Navidad:</strong> El 15 de diciembre, organizaremos una fiesta de Navidad para todos los niños y sus familias.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Dirección: Calle La Paz, Teruel, España | Teléfono: 637148586</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>

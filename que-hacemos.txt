@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardería Villa Peke - ¿Qué hacemos?</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Guardería Villa Peke</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="que-hacemos.html" class="active">¿Qué hacemos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="personal">
+            <h2>Conoce a nuestro equipo</h2>
+            <div class="person-container">
+                <div class="person">
+                    <img src="images/personal.jpg" alt="Foto de profesora">
+                    <h3>Ana López</h3>
+                    <p>Ana es nuestra profesora principal con más de 10 años de experiencia en educación infantil. Su especialidad es fomentar la creatividad y el aprendizaje a través del juego.</p>
+                </div>
+                <div class="person">
+                    <img src="images/personal_1.jpg" alt="Foto de profesora">
+                    <h3>María Fernández</h3>
+                    <p>María es experta en educación temprana y se dedica a desarrollar habilidades socioemocionales en los más pequeños.</p>
+                </div>
+                <div class="person">
+                    <img src="images/personal_2.jpg" alt="Foto de profesora">
+                    <h3>Carmen Ruiz</h3>
+                    <p>Carmen tiene una gran pasión por la música y utiliza canciones para enseñar conceptos básicos de forma divertida.</p>
+                </div>
+                <div class="person">
+                    <img src="images/directora.jpg" alt="Foto de la directora">
+                    <h3>Elena Martínez</h3>
+                    <p>Elena es la directora de Villa Peke. Tiene más de 15 años liderando equipos educativos, asegurándose de que cada niño reciba una atención personalizada y de calidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="historia">
+            <h2>Nuestra historia</h2>
+            <div class="historia-container">
+                <p>
+                    Villa Peke abrió sus puertas en 2008 con la misión de ofrecer un entorno seguro, cariñoso y estimulante para los niños más pequeños. Nuestro objetivo siempre ha sido proporcionar una educación integral que fomente el desarrollo personal, social y cognitivo de cada niño.
+                </p>
+                <p>
+                    Durante estos años, hemos crecido junto a cientos de familias, adaptándonos a las necesidades cambiantes y manteniendo los estándares más altos en educación infantil. Estamos orgullosos de ser una guardería donde los niños no solo aprenden, sino que también se sienten como en casa.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guardería Villa Peke. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
